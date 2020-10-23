@@ -11,4 +11,5 @@ $newsResults = $newsObject['response']['results'];
    echo date('d-M-y h:i:sa', strtotime($news['webPublicationDate']));
    echo '<br>';
 }*/
+ /*$newsResults[0]['type']    ;*/
 ?>

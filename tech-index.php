@@ -440,10 +440,10 @@ require('api.php');
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
-                                        <span class="bg-orange"><a href="tech-category-01.html" title=""></a></span>
-                                        <h4><a href="tech-single.html" title="">Say hello to real handmade office furniture! Clean & beautiful design</a></h4>
-                                        <small><a href="tech-single.html" title="">24 July, 2017</a></small>
-                                        <small><a href="tech-author.html" title="">by Amanda</a></small>
+                                        <span class="bg-orange text-uppercase"><a  title=""><?php echo $newsResults[0]['sectionName']?></a></span>
+                                        <h4><a href="tech-single.html" title=""><?php echo $newsResults[0]['webTitle']?></a></h4>
+                                        <small><a  title=""><?php echo  date('d-M-Y   h:i a', strtotime($newsResults[0]['webPublicationDate']))?></a></small>
+                                        <small><a  title=""><mark>type</mark> <?php echo $newsResults[0]['type']?></a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end shadow-desc -->
                             </div><!-- end shadow -->
@@ -456,10 +456,10 @@ require('api.php');
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
-                                        <span class="bg-orange"><a href="tech-category-01.html" title="">Gadgets</a></span>
-                                        <h4><a href="tech-single.html" title="">Do not make mistakes when choosing web hosting</a></h4>
-                                        <small><a href="tech-single.html" title="">03 July, 2017</a></small>
-                                        <small><a href="tech-author.html" title="">by Jessica</a></small>
+                                        <span class="bg-orange text-uppercase"><a  title=""><?php echo $newsResults[1]['sectionName']?></a></span>
+                                        <h4><a href="tech-single.html" title=""><?php echo $newsResults[1]['webTitle']?></a></h4>
+                                        <small><a  title=""><?php echo  date('d-M-Y   h:i a', strtotime($newsResults[1]['webPublicationDate']))?></a></small>
+                                        <small><a  title=""><mark>type</mark> <?php echo $newsResults[1]['type']?></a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end shadow-desc -->
                              </div><!-- end shadow -->
@@ -472,10 +472,10 @@ require('api.php');
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
-                                        <span class="bg-orange"><a href="tech-category-01.html" title="">Technology</a></span>
-                                        <h4><a href="tech-single.html" title="">The most reliable Galaxy Note 8 images leaked</a></h4>
-                                        <small><a href="tech-single.html" title="">01 July, 2017</a></small>
-                                        <small><a href="tech-author.html" title="">by Jessica</a></small>
+                                        <span class="bg-orange text-uppercase"><a  title=""><?php echo $newsResults[2]['sectionName']?></a></span>
+                                        <h4><a href="tech-single.html" title=""><?php echo $newsResults[2]['webTitle']?></a></h4>
+                                        <small><a  title=""><?php echo  date('d-M-Y   h:i a', strtotime($newsResults[1]['webPublicationDate']))?></a></small>
+                                        <small><a  title=""><mark>type</mark> <?php echo $newsResults[2]['type']?></a></small>
                                     </div><!-- end meta -->
                                 </div><!-- end shadow-desc -->
                              </div><!-- end shadow -->
@@ -544,7 +544,7 @@ require('api.php');
                  <!--sidebar was here-->
                 </div><!-- end row -->
             </div><!-- end container -->
-        </section>
+        </section><!--recent news-->
 
         <footer class="footer">
             <div class="container">
