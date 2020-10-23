@@ -58,11 +58,11 @@ require('api.php');
                     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="tech-index.html">Newspaper Task Preneur Lab Limited</a>
+                    <a class="navbar-brand" href="tech-index.php">Newspaper Task Preneur Lab Limited</a>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="tech-index.html">Home</a>
+                                <a class="nav-link" href="tech-index.php">Home</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav mr-2">
@@ -80,12 +80,12 @@ require('api.php');
                 <div class="masonry-blog clearfix">
                     <div class="first-slot">
                         <div class="masonry-box post-media">
-                             <img src="upload/tech_01.jpg" alt="" class="img-fluid">
+                             <img src="upload/tech_01.jpg" alt="" class="img-fluid" >
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
                                         <span class="bg-orange text-uppercase"><a  title=""><?php echo $newsResults[0]['sectionName']?></a></span>
-                                        <h4><a href="tech-single.html" title=""><?php echo $newsResults[0]['webTitle']?></a></h4>
+                                        <h4><a href="tech-single.php?apiUrl=<?php echo $newsResults[0]['apiUrl']?>" title=""><?php echo $newsResults[0]['webTitle']?></a></h4>
                                         <small><a  title=""><?php echo  date('d-M-Y   h:i a', strtotime($newsResults[0]['webPublicationDate']))?></a></small>
                                         <small><a  title=""><mark>type</mark> <?php echo $newsResults[0]['type']?></a></small>
                                     </div><!-- end meta -->
@@ -101,7 +101,7 @@ require('api.php');
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
                                         <span class="bg-orange text-uppercase"><a  title=""><?php echo $newsResults[1]['sectionName']?></a></span>
-                                        <h4><a href="tech-single.html" title=""><?php echo $newsResults[1]['webTitle']?></a></h4>
+                                        <h4><a href="tech-single.php?apiUrl=<?php echo $newsResults[1]['apiUrl']?>" title=""><?php echo $newsResults[1]['webTitle']?></a></h4>
                                         <small><a  title=""><?php echo  date('d-M-Y   h:i a', strtotime($newsResults[1]['webPublicationDate']))?></a></small>
                                         <small><a  title=""><mark>type</mark> <?php echo $newsResults[1]['type']?></a></small>
                                     </div><!-- end meta -->
@@ -117,7 +117,7 @@ require('api.php');
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
                                         <span class="bg-orange text-uppercase"><a  title=""><?php echo $newsResults[2]['sectionName']?></a></span>
-                                        <h4><a href="tech-single.html" title=""><?php echo $newsResults[2]['webTitle']?></a></h4>
+                                        <h4><a href="tech-single.php?apiUrl=<?php echo $newsResults[2]['apiUrl']?>" title=""><?php echo $newsResults[2]['webTitle']?></a></h4>
                                         <small><a  title=""><?php echo  date('d-M-Y   h:i a', strtotime($newsResults[1]['webPublicationDate']))?></a></small>
                                         <small><a  title=""><mark>type</mark> <?php echo $newsResults[2]['type']?></a></small>
                                     </div><!-- end meta -->
@@ -144,7 +144,7 @@ require('api.php');
                                 <div class="blog-box row"><!--one single news-->
                                     <div class="col-md-4">
                                         <div class="post-media">
-                                            <a href="tech-single.html" title="">
+                                            <a href="tech-single.php?apiUrl=<?php echo $news['apiUrl']?>" title="Click for Delatils">
                                                 <img src="upload/tech_blog_01.jpg" alt="" class="img-fluid">
                                                 <div class="hovereffect"></div>
                                             </a>
