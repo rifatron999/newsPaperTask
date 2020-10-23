@@ -440,7 +440,7 @@ require('api.php');
                              <div class="shadoweffect">
                                 <div class="shadow-desc">
                                     <div class="blog-meta">
-                                        <span class="bg-orange"><a href="tech-category-01.html" title="">Technology</a></span>
+                                        <span class="bg-orange"><a href="tech-category-01.html" title=""></a></span>
                                         <h4><a href="tech-single.html" title="">Say hello to real handmade office furniture! Clean & beautiful design</a></h4>
                                         <small><a href="tech-single.html" title="">24 July, 2017</a></small>
                                         <small><a href="tech-author.html" title="">by Amanda</a></small>
@@ -510,10 +510,10 @@ require('api.php');
                                     <div class="blog-meta big-meta col-md-8">
                                         <h4><a href="tech-single.html" title=""><?php echo $news['webTitle']?></a></h4><!--webtitle-->
                                         <p>This api doesn't provide any news details or news picture . So It is just a dummy text for every news. I am using dummy text and picture for better understaning </p><!--defaualt description-->
-                                        <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title=""><?php echo $news['sectionName']?></a></small> <!--sectionName-->
-                                        <small><a href="tech-single.html" title=""><?php echo  date('d-M-Y   h:i a', strtotime($news['webPublicationDate']))?></a></small><!--web publication date-->
-                                        <small><a href="tech-author.html" title=""><mark>type :</mark> <?php echo $news['type']?></a></small><!--reduce-->
-                                        <small><a href="tech-single.html" title=""><i class="fa fa-eye"></i> 1114</a></small><!--reduce-->
+                                        <small class="firstsmall"><a class="bg-orange"  title=""><?php echo $news['sectionName']?></a></small> <!--sectionName-->
+                                        <small><a  title=""><?php echo  date('d-M-Y   h:i a', strtotime($news['webPublicationDate']))?></a></small><!--web publication date-->
+                                        <small><a  title=""><mark>type: </mark> <?php echo $news['type']?></a></small><!--reduce-->
+                                        <small><a  title=""><i class="fa fa-eye"></i> 1114</a></small><!--reduce-->
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
                                     <hr class="invis">
@@ -529,11 +529,11 @@ require('api.php');
                             <div class="col-md-12">
                                 <nav aria-label="Page navigation">
                                     <ul class="pagination justify-content-start">
-                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link" >1</a></li>
+                                        <li class="page-item"><a class="page-link" >2</a></li>
+                                        <li class="page-item"><a class="page-link" >3</a></li>
                                         <li class="page-item">
-                                            <a class="page-link" href="#">Next</a>
+                                            <a class="page-link" >Next</a>
                                         </li>
                                     </ul>
                                 </nav>
