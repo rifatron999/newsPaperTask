@@ -87,8 +87,8 @@ require('apiSingle.php');
                                 <h3><?php echo $newsSingle['webTitle']?></h3>
 
                                 <div class="blog-meta big-meta">
-                                    <small><a href="tech-single.html" title=""><?php echo  date('d-M-Y   h:i a', strtotime($newsSingle['webPublicationDate']))?></a></small>
-                                    <small><a href="tech-author.html" title=""><mark>type: </mark> <?php echo $newsSingle['type']?></a></small>
+                                    <small><a  title=""><?php echo  date('d-M-Y   h:i a', strtotime($newsSingle['webPublicationDate']))?></a></small>
+                                    <small><a  title=""><mark>type: </mark> <?php echo $newsSingle['type']?></a></small>
                                     <small><a href="#" title=""><i class="fa fa-eye"></i> 2344</a></small>
                                 </div><!-- end meta -->
 
