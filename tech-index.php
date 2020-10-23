@@ -512,7 +512,7 @@ require('api.php');
                                         <p>This api doesn't provide any news details or news picture . So It is just a dummy text for every news. I am using dummy text and picture for better understaning </p><!--defaualt description-->
                                         <small class="firstsmall"><a class="bg-orange" href="tech-category-01.html" title=""><?php echo $news['sectionName']?></a></small> <!--sectionName-->
                                         <small><a href="tech-single.html" title=""><?php echo  date('d-M-Y   h:i a', strtotime($news['webPublicationDate']))?></a></small><!--web publication date-->
-                                        <small><a href="tech-author.html" title="">by Matilda</a></small><!--reduce-->
+                                        <small><a href="tech-author.html" title=""><mark>type :</mark> <?php echo $news['type']?></a></small><!--reduce-->
                                         <small><a href="tech-single.html" title=""><i class="fa fa-eye"></i> 1114</a></small><!--reduce-->
                                     </div><!-- end meta -->
                                 </div><!-- end blog-box -->
