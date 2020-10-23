@@ -1,6 +1,7 @@
 <?php
 $singleNews = $_GET["apiUrl"];
 require('apiSingle.php');
+require('index.php');
 ?>
 
 <!DOCTYPE html>
@@ -68,7 +69,20 @@ require('apiSingle.php');
                         </ul>
                         <ul class="navbar-nav mr-2">
                             <li class="nav-item"><!--google signin will be here-->
-                                <a class="nav-link" href="#"><i class="fa fa-apple"></i></a>
+                                <a class="nav-link" >
+                                    <?php
+                                    if($login_button == '')
+                                    {
+                                        echo '<img class="rounded-circle" src="'.$_SESSION["user_image"].'" width="30" />';
+                                        echo ' '.$_SESSION['user_first_name'].' '.$_SESSION['user_last_name'];
+                                        echo '<a href="logout.php">Logout</div>';
+                                    }
+                                    else
+                                    {
+                                        echo '<div align="center">'.$login_button . '</div>';
+                                    }
+                                    ?>
+                                </a>
                             </li>
                         </ul>
                     </div>
